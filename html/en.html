@@ -1,0 +1,2712 @@
+<link href="css/style_data.css" rel="stylesheet" type="text/css" />
+<style>
+    h1 {
+        font-size: 26px;
+        line-height: 28px
+    }
+
+</style>
+<div class="data-set">
+    <div class="data-nav">
+        <p class="data-nav__text">
+            Step <span class="data-nav__one-step">1</span> of 5
+        </p>
+        <div class="data-nav__nav">
+            <label for="data-nav__tab1" class="data-nav__step dnts-1 dnts_active">1</label>
+            <img src="images/for-data_set/nav__next-step.png" alt="" class="data-nav__arrow">
+            <label for="data-nav__tab2" class="data-nav__step dnts-2">2</label>
+            <img src="images/for-data_set/nav__next-step.png" alt="" class="data-nav__arrow">
+            <label for="data-nav__tab3" class="data-nav__step dnts-3">3</label>
+            <img src="images/for-data_set/nav__next-step.png" alt="" class="data-nav__arrow">
+            <label for="data-nav__tab4" class="data-nav__step dnts-4">4</label>
+            <img src="images/for-data_set/nav__next-step.png" alt="" class="data-nav__arrow">
+            <label for="data-nav__tab5" class="data-nav__step dnts-5">5</label>
+        </div>
+    </div>
+    <input id="data-nav__tab1" type="radio" checked="true" name="tabs" class="data-nav__tab dntb dntb-1">
+    <input id="data-nav__tab2" type="radio" name="tabs" class="data-nav__tab dntb dntb-2">
+    <input id="data-nav__tab3" type="radio" name="tabs" class="data-nav__tab dntb dntb-3">
+    <input id="data-nav__tab4" type="radio" name="tabs" class="data-nav__tab dntb dntb-4">
+    <input id="data-nav__tab5" type="radio" name="tabs" class="data-nav__tab dntb dntb-5">
+
+    <div id="data-body-1">
+        <p class="data-body__title">
+            1. Choose a group of countries
+        </p>
+        <div class="data-body__btn-block">
+            <div class="data-body__select-btn">
+                <input id="select-all-1" type="button" class="data-body__btn data-body__btn_select-all d-none" value="Select all">
+                <input id="unselect-all-1" type="button" class="data-body__btn data-body__btn_unselect-all" value="Clear all">
+            </div>
+            <div class="data-body__nav">
+                <label for="data-nav__tab2" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-body__selections-1">
+            <div class="db-selector-for-all-country d-flex">
+                <input id="all-country" type="checkbox" class="country_type data-body__question">
+                <label for="all-country" class="data-body__label-with_main-check"></label>
+                <label data-tooltip="Press to select / deselect a group" for="all-country" class="data-body__label-without data-body__label-without_main">All countries of the world</label>
+            </div>
+            <div id="db__fgc" class="db__list-option">
+                <div class="data-body__check-label">
+                    <input id="country-g7" type="checkbox" class="country_type data-body__checkbox-with">
+                    <label for="country-g7" class="data-body__label-with"></label>
+                    <label for="country-g7" class="data-body__label-text">G7 Countries</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="country-brics" type="checkbox" class="country_type data-body__checkbox-with">
+                    <label for="country-brics" class="data-body__label-with"></label>
+                    <label for="country-brics" class="data-body__label-text">BRICS</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="country-cis" type="checkbox" class="country_type data-body__checkbox-with">
+                    <label for="country-cis" class="data-body__label-with"></label>
+                    <label for="country-cis" class="data-body__label-text">CIS</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="country-eaeu" type="checkbox" class="country_type data-body__checkbox-with">
+                    <label for="country-eaeu" class="data-body__label-with"></label>
+                    <label for="country-eaeu" class="data-body__label-text">EAEU</label>
+                </div>
+                <div class="data-body__check-label d-none">
+                    <input id="country-more-other" type="checkbox" class="country_type data-body__checkbox-with">
+                    <label for="country-more-other" class="data-body__label-with"></label>
+                    <label for="country-more-other" class="data-body__label-text">Other countries</label>
+                </div>
+            </div>
+        </div>
+        <div class="data-body__btn-block data-body__btn-block_end">
+            <div class="data-body__nav data-body__nav_end">
+                <label for="data-nav__tab2" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+    </div>
+    <div id="data-body-2">
+        <p class="data-body__title">
+            2. Select countries from the list
+        </p>
+        <div class="data-body__btn-block">
+            <div class="data-body__select-btn">
+                <input id="select-all-2" type="button" class="data-body__btn data-body__btn_select-all" value="Select all">
+                <input id="unselect-all-2" type="button" class="data-body__btn data-body__btn_unselect-all" value="Clear all">
+            </div>
+            <div class="data-body__nav">
+                <label for="data-nav__tab1" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab3" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-body__selections-2">
+            <!--<p class="data-body__text">
+									Количество выбраных стран <span class="count_country"></span>
+								</p>-->
+            <p class="data-body__text">
+                Select Countries
+            </p>
+            <div id="db__2s" class="db__2s">
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Abkhazia" name="Abkhazia" id="dbc_Abkhazia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Abkhazia" class="data-body__label-with"></label>
+                        <label for="dbc_Abkhazia" class="data-body__label-text">
+                            Abkhazia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Afghanistan" name="Afghanistan" id="dbc_Afghanistan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Afghanistan" class="data-body__label-with"></label>
+                        <label for="dbc_Afghanistan" class="data-body__label-text">
+                            Afghanistan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Åland Islands" name="AlandIslands" id="dbc_AlandIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_AlandIslands" class="data-body__label-with"></label>
+                        <label for="dbc_AlandIslands" class="data-body__label-text">
+                            Åland Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Albania" name="Albania" id="dbc_Albania" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Albania" class="data-body__label-with"></label>
+                        <label for="dbc_Albania" class="data-body__label-text">
+                            Albania
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Algeria" name="Algeria" id="dbc_Algeria" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Algeria" class="data-body__label-with"></label>
+                        <label for="dbc_Algeria" class="data-body__label-text">
+                            Algeria
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="American Samoa" name="AmericanSamoa" id="dbc_AmericanSamoa" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_AmericanSamoa" class="data-body__label-with"></label>
+                        <label for="dbc_AmericanSamoa" class="data-body__label-text">
+                            American Samoa
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Andorra" name="Andorra" id="dbc_Andorra" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Andorra" class="data-body__label-with"></label>
+                        <label for="dbc_Andorra" class="data-body__label-text">
+                            Andorra
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Angola" name="Angola" id="dbc_Angola" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Angola" class="data-body__label-with"></label>
+                        <label for="dbc_Angola" class="data-body__label-text">
+                            Angola
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Anguilla" name="Anguilla" id="dbc_Anguilla" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Anguilla" class="data-body__label-with"></label>
+                        <label for="dbc_Anguilla" class="data-body__label-text">
+                            Anguilla
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Antarctica" name="Antarctica" id="dbc_Antarctica" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Antarctica" class="data-body__label-with"></label>
+                        <label for="dbc_Antarctica" class="data-body__label-text">
+                            Antarctica
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Antigua and Barbuda" name="AntiguaAndBarbuda" id="dbc_AntiguaAndBarbuda" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_AntiguaAndBarbuda" class="data-body__label-with"></label>
+                        <label for="dbc_AntiguaAndBarbuda" class="data-body__label-text">
+                            Antigua and Barbuda
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Argentina" name="Argentina" id="dbc_Argentina" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Argentina" class="data-body__label-with"></label>
+                        <label for="dbc_Argentina" class="data-body__label-text">
+                            Argentina
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_country-eaeu class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Armenia" name="Armenia" id="dbc_Armenia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Armenia" class="data-body__label-with"></label>
+                        <label for="dbc_Armenia" class="data-body__label-text">
+                            Armenia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Aruba" name="Aruba" id="dbc_Aruba" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Aruba" class="data-body__label-with"></label>
+                        <label for="dbc_Aruba" class="data-body__label-text">
+                            Aruba
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Australia" name="Australia" id="dbc_Australia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Australia" class="data-body__label-with"></label>
+                        <label for="dbc_Australia" class="data-body__label-text">
+                            Australia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Austria" name="Austria" id="dbc_Austria" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Austria" class="data-body__label-with"></label>
+                        <label for="dbc_Austria" class="data-body__label-text">
+                            Austria
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Azerbaijan" name="Azerbaijan" id="dbc_Azerbaijan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Azerbaijan" class="data-body__label-with"></label>
+                        <label for="dbc_Azerbaijan" class="data-body__label-text">
+                            Azerbaijan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bahamas" name="Bahamas" id="dbc_Bahamas" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bahamas" class="data-body__label-with"></label>
+                        <label for="dbc_Bahamas" class="data-body__label-text">
+                            Bahamas
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bahrain" name="Bahrain" id="dbc_Bahrain" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bahrain" class="data-body__label-with"></label>
+                        <label for="dbc_Bahrain" class="data-body__label-text">
+                            Bahrain
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bangladesh" name="Bangladesh" id="dbc_Bangladesh" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bangladesh" class="data-body__label-with"></label>
+                        <label for="dbc_Bangladesh" class="data-body__label-text">
+                            Bangladesh
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Barbados" name="Barbados" id="dbc_Barbados" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Barbados" class="data-body__label-with"></label>
+                        <label for="dbc_Barbados" class="data-body__label-text">
+                            Barbados
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_country-eaeu class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Belarus" name="Belarus" id="dbc_Belarus" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Belarus" class="data-body__label-with"></label>
+                        <label for="dbc_Belarus" class="data-body__label-text">
+                            Belarus
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Belgium" name="Belgium" id="dbc_Belgium" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Belgium" class="data-body__label-with"></label>
+                        <label for="dbc_Belgium" class="data-body__label-text">
+                            Belgium
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Belize" name="Belize" id="dbc_Belize" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Belize" class="data-body__label-with"></label>
+                        <label for="dbc_Belize" class="data-body__label-text">
+                            Belize
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Benin" name="Benin" id="dbc_Benin" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Benin" class="data-body__label-with"></label>
+                        <label for="dbc_Benin" class="data-body__label-text">
+                            Benin
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bermuda" name="Bermuda" id="dbc_Bermuda" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bermuda" class="data-body__label-with"></label>
+                        <label for="dbc_Bermuda" class="data-body__label-text">
+                            Bermuda
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bhutan" name="Bhutan" id="dbc_Bhutan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bhutan" class="data-body__label-with"></label>
+                        <label for="dbc_Bhutan" class="data-body__label-text">
+                            Bhutan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bolivia, plurinational state of" name="BoliviaPlurinationalStateOf" id="dbc_BoliviaPlurinationalStateOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BoliviaPlurinationalStateOf" class="data-body__label-with"></label>
+                        <label for="dbc_BoliviaPlurinationalStateOf" class="data-body__label-text">
+                            Bolivia, plurinational state of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bonaire, Sint Eustatius and Saba" name="BonaireSintEustatiusAndSaba" id="dbc_BonaireSintEustatiusAndSaba" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BonaireSintEustatiusAndSaba" class="data-body__label-with"></label>
+                        <label for="dbc_BonaireSintEustatiusAndSaba" class="data-body__label-text">
+                            Bonaire, Sint Eustatius and Saba
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bosnia and Herzegovina" name="BosniaAndHerzegovina" id="dbc_BosniaAndHerzegovina" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BosniaAndHerzegovina" class="data-body__label-with"></label>
+                        <label for="dbc_BosniaAndHerzegovina" class="data-body__label-text">
+                            Bosnia and Herzegovina
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Botswana" name="Botswana" id="dbc_Botswana" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Botswana" class="data-body__label-with"></label>
+                        <label for="dbc_Botswana" class="data-body__label-text">
+                            Botswana
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bouvet Island" name="BouvetIsland" id="dbc_BouvetIsland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BouvetIsland" class="data-body__label-with"></label>
+                        <label for="dbc_BouvetIsland" class="data-body__label-text">
+                            Bouvet Island
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-brics class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Brazil" name="Brazil" id="dbc_Brazil" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Brazil" class="data-body__label-with"></label>
+                        <label for="dbc_Brazil" class="data-body__label-text">
+                            Brazil
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="British Indian Ocean Territory" name="BritishIndianOceanTerritory" id="dbc_BritishIndianOceanTerritory" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BritishIndianOceanTerritory" class="data-body__label-with"></label>
+                        <label for="dbc_BritishIndianOceanTerritory" class="data-body__label-text">
+                            British Indian Ocean Territory
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Brunei Darussalam" name="BruneiDarussalam" id="dbc_BruneiDarussalam" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BruneiDarussalam" class="data-body__label-with"></label>
+                        <label for="dbc_BruneiDarussalam" class="data-body__label-text">
+                            Brunei Darussalam
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Bulgaria" name="Bulgaria" id="dbc_Bulgaria" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Bulgaria" class="data-body__label-with"></label>
+                        <label for="dbc_Bulgaria" class="data-body__label-text">
+                            Bulgaria
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Burkina Faso" name="BurkinaFaso" id="dbc_BurkinaFaso" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_BurkinaFaso" class="data-body__label-with"></label>
+                        <label for="dbc_BurkinaFaso" class="data-body__label-text">
+                            Burkina Faso
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Burma" name="Burma" id="dbc_Burma" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Burma" class="data-body__label-with"></label>
+                        <label for="dbc_Burma" class="data-body__label-text">
+                            Burma
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Burundi" name="Burundi" id="dbc_Burundi" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Burundi" class="data-body__label-with"></label>
+                        <label for="dbc_Burundi" class="data-body__label-text">
+                            Burundi
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cambodia" name="Cambodia" id="dbc_Cambodia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Cambodia" class="data-body__label-with"></label>
+                        <label for="dbc_Cambodia" class="data-body__label-text">
+                            Cambodia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cameroon" name="Cameroon" id="dbc_Cameroon" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Cameroon" class="data-body__label-with"></label>
+                        <label for="dbc_Cameroon" class="data-body__label-text">
+                            Cameroon
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Canada" name="Canada" id="dbc_Canada" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Canada" class="data-body__label-with"></label>
+                        <label for="dbc_Canada" class="data-body__label-text">
+                            Canada
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cape Verde" name="CapeVerde" id="dbc_CapeVerde" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CapeVerde" class="data-body__label-with"></label>
+                        <label for="dbc_CapeVerde" class="data-body__label-text">
+                            Cape Verde
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cayman Islands" name="CaymanIslands" id="dbc_CaymanIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CaymanIslands" class="data-body__label-with"></label>
+                        <label for="dbc_CaymanIslands" class="data-body__label-text">
+                            Cayman Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Central African Republic" name="CentralAfricanRepublic" id="dbc_CentralAfricanRepublic" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CentralAfricanRepublic" class="data-body__label-with"></label>
+                        <label for="dbc_CentralAfricanRepublic" class="data-body__label-text">
+                            Central African Republic
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Chad" name="Chad" id="dbc_Chad" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Chad" class="data-body__label-with"></label>
+                        <label for="dbc_Chad" class="data-body__label-text">
+                            Chad
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Chile" name="Chile" id="dbc_Chile" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Chile" class="data-body__label-with"></label>
+                        <label for="dbc_Chile" class="data-body__label-text">
+                            Chile
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-brics class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="China" name="China" id="dbc_China" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_China" class="data-body__label-with"></label>
+                        <label for="dbc_China" class="data-body__label-text">
+                            China
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Christmas Island" name="ChristmasIsland" id="dbc_ChristmasIsland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_ChristmasIsland" class="data-body__label-with"></label>
+                        <label for="dbc_ChristmasIsland" class="data-body__label-text">
+                            Christmas Island
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cocos (Keeling) Islands" name="CocosKeelingIslands" id="dbc_CocosKeelingIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CocosKeelingIslands" class="data-body__label-with"></label>
+                        <label for="dbc_CocosKeelingIslands" class="data-body__label-text">
+                            Cocos (Keeling) Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Colombia" name="Colombia" id="dbc_Colombia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Colombia" class="data-body__label-with"></label>
+                        <label for="dbc_Colombia" class="data-body__label-text">
+                            Colombia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Comoros" name="Comoros" id="dbc_Comoros" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Comoros" class="data-body__label-with"></label>
+                        <label for="dbc_Comoros" class="data-body__label-text">
+                            Comoros
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Congo" name="Congo" id="dbc_Congo" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Congo" class="data-body__label-with"></label>
+                        <label for="dbc_Congo" class="data-body__label-text">
+                            Congo
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Congo, Democratic Republic of the" name="CongoDemocraticRepublicOfThe" id="dbc_CongoDemocraticRepublicOfThe" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CongoDemocraticRepublicOfThe" class="data-body__label-with"></label>
+                        <label for="dbc_CongoDemocraticRepublicOfThe" class="data-body__label-text">
+                            Congo, Democratic Republic of the
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cook Islands" name="CookIslands" id="dbc_CookIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CookIslands" class="data-body__label-with"></label>
+                        <label for="dbc_CookIslands" class="data-body__label-text">
+                            Cook Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Costa Rica" name="CostaRica" id="dbc_CostaRica" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CostaRica" class="data-body__label-with"></label>
+                        <label for="dbc_CostaRica" class="data-body__label-text">
+                            Costa Rica
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cote d'Ivoire" name="CoteDIvoire" id="dbc_CoteDIvoire" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CoteDIvoire" class="data-body__label-with"></label>
+                        <label for="dbc_CoteDIvoire" class="data-body__label-text">
+                            Cote d'Ivoire
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Croatia" name="Croatia" id="dbc_Croatia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Croatia" class="data-body__label-with"></label>
+                        <label for="dbc_Croatia" class="data-body__label-text">
+                            Croatia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cuba" name="Cuba" id="dbc_Cuba" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Cuba" class="data-body__label-with"></label>
+                        <label for="dbc_Cuba" class="data-body__label-text">
+                            Cuba
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Curaçao" name="Curacao" id="dbc_Curacao" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Curacao" class="data-body__label-with"></label>
+                        <label for="dbc_Curacao" class="data-body__label-text">
+                            Curaçao
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Cyprus" name="Cyprus" id="dbc_Cyprus" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Cyprus" class="data-body__label-with"></label>
+                        <label for="dbc_Cyprus" class="data-body__label-text">
+                            Cyprus
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Czech Republic" name="CzechRepublic" id="dbc_CzechRepublic" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_CzechRepublic" class="data-body__label-with"></label>
+                        <label for="dbc_CzechRepublic" class="data-body__label-text">
+                            Czech Republic
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Denmark" name="Denmark" id="dbc_Denmark" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Denmark" class="data-body__label-with"></label>
+                        <label for="dbc_Denmark" class="data-body__label-text">
+                            Denmark
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Djibouti" name="Djibouti" id="dbc_Djibouti" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Djibouti" class="data-body__label-with"></label>
+                        <label for="dbc_Djibouti" class="data-body__label-text">
+                            Djibouti
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Dominica" name="Dominica" id="dbc_Dominica" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Dominica" class="data-body__label-with"></label>
+                        <label for="dbc_Dominica" class="data-body__label-text">
+                            Dominica
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Dominican Republic" name="DominicanRepublic" id="dbc_DominicanRepublic" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_DominicanRepublic" class="data-body__label-with"></label>
+                        <label for="dbc_DominicanRepublic" class="data-body__label-text">
+                            Dominican Republic
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Ecuador" name="Ecuador" id="dbc_Ecuador" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Ecuador" class="data-body__label-with"></label>
+                        <label for="dbc_Ecuador" class="data-body__label-text">
+                            Ecuador
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Egypt" name="Egypt" id="dbc_Egypt" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Egypt" class="data-body__label-with"></label>
+                        <label for="dbc_Egypt" class="data-body__label-text">
+                            Egypt
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="El Salvador" name="ElSalvador" id="dbc_ElSalvador" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_ElSalvador" class="data-body__label-with"></label>
+                        <label for="dbc_ElSalvador" class="data-body__label-text">
+                            El Salvador
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Equatorial Guinea" name="EquatorialGuinea" id="dbc_EquatorialGuinea" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_EquatorialGuinea" class="data-body__label-with"></label>
+                        <label for="dbc_EquatorialGuinea" class="data-body__label-text">
+                            Equatorial Guinea
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Eritrea" name="Eritrea" id="dbc_Eritrea" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Eritrea" class="data-body__label-with"></label>
+                        <label for="dbc_Eritrea" class="data-body__label-text">
+                            Eritrea
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Estonia" name="Estonia" id="dbc_Estonia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Estonia" class="data-body__label-with"></label>
+                        <label for="dbc_Estonia" class="data-body__label-text">
+                            Estonia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Ethiopia" name="Ethiopia" id="dbc_Ethiopia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Ethiopia" class="data-body__label-with"></label>
+                        <label for="dbc_Ethiopia" class="data-body__label-text">
+                            Ethiopia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Falkland Islands (Malvinas)" name="FalklandIslandsMalvinas" id="dbc_FalklandIslandsMalvinas" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_FalklandIslandsMalvinas" class="data-body__label-with"></label>
+                        <label for="dbc_FalklandIslandsMalvinas" class="data-body__label-text">
+                            Falkland Islands (Malvinas)
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Faroe Islands" name="FaroeIslands" id="dbc_FaroeIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_FaroeIslands" class="data-body__label-with"></label>
+                        <label for="dbc_FaroeIslands" class="data-body__label-text">
+                            Faroe Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Fiji" name="Fiji" id="dbc_Fiji" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Fiji" class="data-body__label-with"></label>
+                        <label for="dbc_Fiji" class="data-body__label-text">
+                            Fiji
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Finland" name="Finland" id="dbc_Finland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Finland" class="data-body__label-with"></label>
+                        <label for="dbc_Finland" class="data-body__label-text">
+                            Finland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="France" name="France" id="dbc_France" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_France" class="data-body__label-with"></label>
+                        <label for="dbc_France" class="data-body__label-text">
+                            France
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="French Guiana" name="FrenchGuiana" id="dbc_FrenchGuiana" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_FrenchGuiana" class="data-body__label-with"></label>
+                        <label for="dbc_FrenchGuiana" class="data-body__label-text">
+                            French Guiana
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="French Polynesia" name="FrenchPolynesia" id="dbc_FrenchPolynesia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_FrenchPolynesia" class="data-body__label-with"></label>
+                        <label for="dbc_FrenchPolynesia" class="data-body__label-text">
+                            French Polynesia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="French Southern Territories" name="FrenchSouthernTerritories" id="dbc_FrenchSouthernTerritories" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_FrenchSouthernTerritories" class="data-body__label-with"></label>
+                        <label for="dbc_FrenchSouthernTerritories" class="data-body__label-text">
+                            French Southern Territories
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Gabon" name="Gabon" id="dbc_Gabon" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Gabon" class="data-body__label-with"></label>
+                        <label for="dbc_Gabon" class="data-body__label-text">
+                            Gabon
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Gambia" name="Gambia" id="dbc_Gambia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Gambia" class="data-body__label-with"></label>
+                        <label for="dbc_Gambia" class="data-body__label-text">
+                            Gambia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Georgia" name="Georgia" id="dbc_Georgia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Georgia" class="data-body__label-with"></label>
+                        <label for="dbc_Georgia" class="data-body__label-text">
+                            Georgia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Germany" name="Germany" id="dbc_Germany" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Germany" class="data-body__label-with"></label>
+                        <label for="dbc_Germany" class="data-body__label-text">
+                            Germany
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Ghana" name="Ghana" id="dbc_Ghana" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Ghana" class="data-body__label-with"></label>
+                        <label for="dbc_Ghana" class="data-body__label-text">
+                            Ghana
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Gibraltar" name="Gibraltar" id="dbc_Gibraltar" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Gibraltar" class="data-body__label-with"></label>
+                        <label for="dbc_Gibraltar" class="data-body__label-text">
+                            Gibraltar
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Greece" name="Greece" id="dbc_Greece" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Greece" class="data-body__label-with"></label>
+                        <label for="dbc_Greece" class="data-body__label-text">
+                            Greece
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Greenland" name="Greenland" id="dbc_Greenland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Greenland" class="data-body__label-with"></label>
+                        <label for="dbc_Greenland" class="data-body__label-text">
+                            Greenland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Grenada" name="Grenada" id="dbc_Grenada" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Grenada" class="data-body__label-with"></label>
+                        <label for="dbc_Grenada" class="data-body__label-text">
+                            Grenada
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guadeloupe" name="Guadeloupe" id="dbc_Guadeloupe" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guadeloupe" class="data-body__label-with"></label>
+                        <label for="dbc_Guadeloupe" class="data-body__label-text">
+                            Guadeloupe
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guam" name="Guam" id="dbc_Guam" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guam" class="data-body__label-with"></label>
+                        <label for="dbc_Guam" class="data-body__label-text">
+                            Guam
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guatemala" name="Guatemala" id="dbc_Guatemala" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guatemala" class="data-body__label-with"></label>
+                        <label for="dbc_Guatemala" class="data-body__label-text">
+                            Guatemala
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guernsey" name="Guernsey" id="dbc_Guernsey" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guernsey" class="data-body__label-with"></label>
+                        <label for="dbc_Guernsey" class="data-body__label-text">
+                            Guernsey
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guinea" name="Guinea" id="dbc_Guinea" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guinea" class="data-body__label-with"></label>
+                        <label for="dbc_Guinea" class="data-body__label-text">
+                            Guinea
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guinea-Bissau" name="GuineaBissau" id="dbc_GuineaBissau" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_GuineaBissau" class="data-body__label-with"></label>
+                        <label for="dbc_GuineaBissau" class="data-body__label-text">
+                            Guinea-Bissau
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Guyana" name="Guyana" id="dbc_Guyana" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Guyana" class="data-body__label-with"></label>
+                        <label for="dbc_Guyana" class="data-body__label-text">
+                            Guyana
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Haiti" name="Haiti" id="dbc_Haiti" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Haiti" class="data-body__label-with"></label>
+                        <label for="dbc_Haiti" class="data-body__label-text">
+                            Haiti
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Heard Island and McDonald Islands" name="HeardIslandAndMcDonaldIslands" id="dbc_HeardIslandAndMcDonaldIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_HeardIslandAndMcDonaldIslands" class="data-body__label-with"></label>
+                        <label for="dbc_HeardIslandAndMcDonaldIslands" class="data-body__label-text">
+                            Heard Island and McDonald Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Holy See (Vatican City State)" name="HolySeeVaticanCityState" id="dbc_HolySeeVaticanCityState" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_HolySeeVaticanCityState" class="data-body__label-with"></label>
+                        <label for="dbc_HolySeeVaticanCityState" class="data-body__label-text">
+                            Holy See (Vatican City State)
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Honduras" name="Honduras" id="dbc_Honduras" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Honduras" class="data-body__label-with"></label>
+                        <label for="dbc_Honduras" class="data-body__label-text">
+                            Honduras
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Hong Kong" name="HongKong" id="dbc_HongKong" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_HongKong" class="data-body__label-with"></label>
+                        <label for="dbc_HongKong" class="data-body__label-text">
+                            Hong Kong
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Hungary" name="Hungary" id="dbc_Hungary" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Hungary" class="data-body__label-with"></label>
+                        <label for="dbc_Hungary" class="data-body__label-text">
+                            Hungary
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Iceland" name="Iceland" id="dbc_Iceland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Iceland" class="data-body__label-with"></label>
+                        <label for="dbc_Iceland" class="data-body__label-text">
+                            Iceland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-brics class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="India" name="India" id="dbc_India" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_India" class="data-body__label-with"></label>
+                        <label for="dbc_India" class="data-body__label-text">
+                            India
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Indonesia" name="Indonesia" id="dbc_Indonesia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Indonesia" class="data-body__label-with"></label>
+                        <label for="dbc_Indonesia" class="data-body__label-text">
+                            Indonesia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Iran, Islamic Republic of" name="IranIslamicRepublicOf" id="dbc_IranIslamicRepublicOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_IranIslamicRepublicOf" class="data-body__label-with"></label>
+                        <label for="dbc_IranIslamicRepublicOf" class="data-body__label-text">
+                            Iran, Islamic Republic of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Iraq" name="Iraq" id="dbc_Iraq" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Iraq" class="data-body__label-with"></label>
+                        <label for="dbc_Iraq" class="data-body__label-text">
+                            Iraq
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Ireland" name="Ireland" id="dbc_Ireland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Ireland" class="data-body__label-with"></label>
+                        <label for="dbc_Ireland" class="data-body__label-text">
+                            Ireland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Isle of Man" name="IsleOfMan" id="dbc_IsleOfMan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_IsleOfMan" class="data-body__label-with"></label>
+                        <label for="dbc_IsleOfMan" class="data-body__label-text">
+                            Isle of Man
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Israel" name="Israel" id="dbc_Israel" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Israel" class="data-body__label-with"></label>
+                        <label for="dbc_Israel" class="data-body__label-text">
+                            Israel
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Italy" name="Italy" id="dbc_Italy" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Italy" class="data-body__label-with"></label>
+                        <label for="dbc_Italy" class="data-body__label-text">
+                            Italy
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Jamaica" name="Jamaica" id="dbc_Jamaica" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Jamaica" class="data-body__label-with"></label>
+                        <label for="dbc_Jamaica" class="data-body__label-text">
+                            Jamaica
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Japan" name="Japan" id="dbc_Japan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Japan" class="data-body__label-with"></label>
+                        <label for="dbc_Japan" class="data-body__label-text">
+                            Japan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Jersey" name="Jersey" id="dbc_Jersey" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Jersey" class="data-body__label-with"></label>
+                        <label for="dbc_Jersey" class="data-body__label-text">
+                            Jersey
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Jordan" name="Jordan" id="dbc_Jordan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Jordan" class="data-body__label-with"></label>
+                        <label for="dbc_Jordan" class="data-body__label-text">
+                            Jordan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_country-eaeu class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Kazakhstan" name="Kazakhstan" id="dbc_Kazakhstan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Kazakhstan" class="data-body__label-with"></label>
+                        <label for="dbc_Kazakhstan" class="data-body__label-text">
+                            Kazakhstan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Kenya" name="Kenya" id="dbc_Kenya" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Kenya" class="data-body__label-with"></label>
+                        <label for="dbc_Kenya" class="data-body__label-text">
+                            Kenya
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Kiribati" name="Kiribati" id="dbc_Kiribati" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Kiribati" class="data-body__label-with"></label>
+                        <label for="dbc_Kiribati" class="data-body__label-text">
+                            Kiribati
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Korea, Democratic People's republic of" name="KoreaDemocraticPeoplesRepublicOf" id="dbc_KoreaDemocraticPeoplesRepublicOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_KoreaDemocraticPeoplesRepublicOf" class="data-body__label-with"></label>
+                        <label for="dbc_KoreaDemocraticPeoplesRepublicOf" class="data-body__label-text">
+                            Korea, Democratic People's republic of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Kuwait" name="Kuwait" id="dbc_Kuwait" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Kuwait" class="data-body__label-with"></label>
+                        <label for="dbc_Kuwait" class="data-body__label-text">
+                            Kuwait
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_country-eaeu class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Kyrgyzstan" name="Kyrgyzstan" id="dbc_Kyrgyzstan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Kyrgyzstan" class="data-body__label-with"></label>
+                        <label for="dbc_Kyrgyzstan" class="data-body__label-text">
+                            Kyrgyzstan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Lao People's Democratic Republic" name="LaoPeoplesDemocraticRepublic" id="dbc_LaoPeoplesDemocraticRepublic" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_LaoPeoplesDemocraticRepublic" class="data-body__label-with"></label>
+                        <label for="dbc_LaoPeoplesDemocraticRepublic" class="data-body__label-text">
+                            Lao People's Democratic Republic
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Latvia" name="Latvia" id="dbc_Latvia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Latvia" class="data-body__label-with"></label>
+                        <label for="dbc_Latvia" class="data-body__label-text">
+                            Latvia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Lebanon" name="Lebanon" id="dbc_Lebanon" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Lebanon" class="data-body__label-with"></label>
+                        <label for="dbc_Lebanon" class="data-body__label-text">
+                            Lebanon
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Lesotho" name="Lesotho" id="dbc_Lesotho" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Lesotho" class="data-body__label-with"></label>
+                        <label for="dbc_Lesotho" class="data-body__label-text">
+                            Lesotho
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Liberia" name="Liberia" id="dbc_Liberia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Liberia" class="data-body__label-with"></label>
+                        <label for="dbc_Liberia" class="data-body__label-text">
+                            Liberia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Libyan Arab Jamahiriya" name="LibyanArabJamahiriya" id="dbc_LibyanArabJamahiriya" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_LibyanArabJamahiriya" class="data-body__label-with"></label>
+                        <label for="dbc_LibyanArabJamahiriya" class="data-body__label-text">
+                            Libyan Arab Jamahiriya
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Liechtenstein" name="Liechtenstein" id="dbc_Liechtenstein" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Liechtenstein" class="data-body__label-with"></label>
+                        <label for="dbc_Liechtenstein" class="data-body__label-text">
+                            Liechtenstein
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Lithuania" name="Lithuania" id="dbc_Lithuania" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Lithuania" class="data-body__label-with"></label>
+                        <label for="dbc_Lithuania" class="data-body__label-text">
+                            Lithuania
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Luxembourg" name="Luxembourg" id="dbc_Luxembourg" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Luxembourg" class="data-body__label-with"></label>
+                        <label for="dbc_Luxembourg" class="data-body__label-text">
+                            Luxembourg
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Macao" name="Macao" id="dbc_Macao" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Macao" class="data-body__label-with"></label>
+                        <label for="dbc_Macao" class="data-body__label-text">
+                            Macao
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Macedonia, The Former Yugoslav Republic Of" name="MacedoniaTheFormerYugoslavRepublicOf" id="dbc_MacedoniaTheFormerYugoslavRepublicOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_MacedoniaTheFormerYugoslavRepublicOf" class="data-body__label-with"></label>
+                        <label for="dbc_MacedoniaTheFormerYugoslavRepublicOf" class="data-body__label-text">
+                            Macedonia, The Former Yugoslav Republic Of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Madagascar" name="Madagascar" id="dbc_Madagascar" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Madagascar" class="data-body__label-with"></label>
+                        <label for="dbc_Madagascar" class="data-body__label-text">
+                            Madagascar
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Malawi" name="Malawi" id="dbc_Malawi" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Malawi" class="data-body__label-with"></label>
+                        <label for="dbc_Malawi" class="data-body__label-text">
+                            Malawi
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Malaysia" name="Malaysia" id="dbc_Malaysia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Malaysia" class="data-body__label-with"></label>
+                        <label for="dbc_Malaysia" class="data-body__label-text">
+                            Malaysia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Maldives" name="Maldives" id="dbc_Maldives" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Maldives" class="data-body__label-with"></label>
+                        <label for="dbc_Maldives" class="data-body__label-text">
+                            Maldives
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mali" name="Mali" id="dbc_Mali" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mali" class="data-body__label-with"></label>
+                        <label for="dbc_Mali" class="data-body__label-text">
+                            Mali
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Malta" name="Malta" id="dbc_Malta" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Malta" class="data-body__label-with"></label>
+                        <label for="dbc_Malta" class="data-body__label-text">
+                            Malta
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Marshall Islands" name="Marshall Islands" id="dbc_Marshall Islands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Marshall Islands" class="data-body__label-with"></label>
+                        <label for="dbc_Marshall Islands" class="data-body__label-text">
+                            Marshall Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Martinique" name="Martinique" id="dbc_Martinique" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Martinique" class="data-body__label-with"></label>
+                        <label for="dbc_Martinique" class="data-body__label-text">
+                            Martinique
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mauritania" name="Mauritania" id="dbc_Mauritania" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mauritania" class="data-body__label-with"></label>
+                        <label for="dbc_Mauritania" class="data-body__label-text">
+                            Mauritania
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mauritius" name="Mauritius" id="dbc_Mauritius" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mauritius" class="data-body__label-with"></label>
+                        <label for="dbc_Mauritius" class="data-body__label-text">
+                            Mauritius
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mayotte" name="Mayotte" id="dbc_Mayotte" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mayotte" class="data-body__label-with"></label>
+                        <label for="dbc_Mayotte" class="data-body__label-text">
+                            Mayotte
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mexico" name="Mexico" id="dbc_Mexico" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mexico" class="data-body__label-with"></label>
+                        <label for="dbc_Mexico" class="data-body__label-text">
+                            Mexico
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Micronesia, Federated States of" name="MicronesiaFederatedStatesOf" id="dbc_MicronesiaFederatedStatesOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_MicronesiaFederatedStatesOf" class="data-body__label-with"></label>
+                        <label for="dbc_MicronesiaFederatedStatesOf" class="data-body__label-text">
+                            Micronesia, Federated States of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Moldova" name="Moldova" id="dbc_Moldova" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Moldova" class="data-body__label-with"></label>
+                        <label for="dbc_Moldova" class="data-body__label-text">
+                            Moldova
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Monaco" name="Monaco" id="dbc_Monaco" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Monaco" class="data-body__label-with"></label>
+                        <label for="dbc_Monaco" class="data-body__label-text">
+                            Monaco
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mongolia" name="Mongolia" id="dbc_Mongolia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mongolia" class="data-body__label-with"></label>
+                        <label for="dbc_Mongolia" class="data-body__label-text">
+                            Mongolia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Montenegro" name="Montenegro" id="dbc_Montenegro" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Montenegro" class="data-body__label-with"></label>
+                        <label for="dbc_Montenegro" class="data-body__label-text">
+                            Montenegro
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Montserrat" name="Montserrat" id="dbc_Montserrat" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Montserrat" class="data-body__label-with"></label>
+                        <label for="dbc_Montserrat" class="data-body__label-text">
+                            Montserrat
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Morocco" name="Morocco" id="dbc_Morocco" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Morocco" class="data-body__label-with"></label>
+                        <label for="dbc_Morocco" class="data-body__label-text">
+                            Morocco
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Mozambique" name="Mozambique" id="dbc_Mozambique" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Mozambique" class="data-body__label-with"></label>
+                        <label for="dbc_Mozambique" class="data-body__label-text">
+                            Mozambique
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Namibia" name="Namibia" id="dbc_Namibia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Namibia" class="data-body__label-with"></label>
+                        <label for="dbc_Namibia" class="data-body__label-text">
+                            Namibia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Nauru" name="Nauru" id="dbc_Nauru" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Nauru" class="data-body__label-with"></label>
+                        <label for="dbc_Nauru" class="data-body__label-text">
+                            Nauru
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Nepal" name="Nepal" id="dbc_Nepal" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Nepal" class="data-body__label-with"></label>
+                        <label for="dbc_Nepal" class="data-body__label-text">
+                            Nepal
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Netherlands" name="Netherlands" id="dbc_Netherlands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Netherlands" class="data-body__label-with"></label>
+                        <label for="dbc_Netherlands" class="data-body__label-text">
+                            Netherlands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="New Caledonia" name="NewCaledonia" id="dbc_NewCaledonia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_NewCaledonia" class="data-body__label-with"></label>
+                        <label for="dbc_NewCaledonia" class="data-body__label-text">
+                            New Caledonia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="New Zealand" name="NewZealand" id="dbc_NewZealand" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_NewZealand" class="data-body__label-with"></label>
+                        <label for="dbc_NewZealand" class="data-body__label-text">
+                            New Zealand
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Nicaragua" name="Nicaragua" id="dbc_Nicaragua" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Nicaragua" class="data-body__label-with"></label>
+                        <label for="dbc_Nicaragua" class="data-body__label-text">
+                            Nicaragua
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Niger" name="Niger" id="dbc_Niger" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Niger" class="data-body__label-with"></label>
+                        <label for="dbc_Niger" class="data-body__label-text">
+                            Niger
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Nigeria" name="Nigeria" id="dbc_Nigeria" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Nigeria" class="data-body__label-with"></label>
+                        <label for="dbc_Nigeria" class="data-body__label-text">
+                            Nigeria
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Niue" name="Niue" id="dbc_Niue" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Niue" class="data-body__label-with"></label>
+                        <label for="dbc_Niue" class="data-body__label-text">
+                            Niue
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Norfolk Island" name="NorfolkIsland" id="dbc_NorfolkIsland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_NorfolkIsland" class="data-body__label-with"></label>
+                        <label for="dbc_NorfolkIsland" class="data-body__label-text">
+                            Norfolk Island
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Northern Mariana Islands" name="NorthernMarianaIslands" id="dbc_NorthernMarianaIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_NorthernMarianaIslands" class="data-body__label-with"></label>
+                        <label for="dbc_NorthernMarianaIslands" class="data-body__label-text">
+                            Northern Mariana Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Norway" name="Norway" id="dbc_Norway" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Norway" class="data-body__label-with"></label>
+                        <label for="dbc_Norway" class="data-body__label-text">
+                            Norway
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Oman" name="Oman" id="dbc_Oman" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Oman" class="data-body__label-with"></label>
+                        <label for="dbc_Oman" class="data-body__label-text">
+                            Oman
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Pakistan" name="Pakistan" id="dbc_Pakistan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Pakistan" class="data-body__label-with"></label>
+                        <label for="dbc_Pakistan" class="data-body__label-text">
+                            Pakistan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Palau" name="Palau" id="dbc_Palau" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Palau" class="data-body__label-with"></label>
+                        <label for="dbc_Palau" class="data-body__label-text">
+                            Palau
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Palestinian Territory, Occupied" name="PalestinianTerritoryOccupied" id="dbc_PalestinianTerritoryOccupied" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_PalestinianTerritoryOccupied" class="data-body__label-with"></label>
+                        <label for="dbc_PalestinianTerritoryOccupied" class="data-body__label-text">
+                            Palestinian Territory, Occupied
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Panama" name="Panama" id="dbc_Panama" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Panama" class="data-body__label-with"></label>
+                        <label for="dbc_Panama" class="data-body__label-text">
+                            Panama
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Papua New Guinea" name="PapuaNewGuinea" id="dbc_PapuaNewGuinea" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_PapuaNewGuinea" class="data-body__label-with"></label>
+                        <label for="dbc_PapuaNewGuinea" class="data-body__label-text">
+                            Papua New Guinea
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Paraguay" name="Paraguay" id="dbc_Paraguay" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Paraguay" class="data-body__label-with"></label>
+                        <label for="dbc_Paraguay" class="data-body__label-text">
+                            Paraguay
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Peru" name="Peru" id="dbc_Peru" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Peru" class="data-body__label-with"></label>
+                        <label for="dbc_Peru" class="data-body__label-text">
+                            Peru
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Philippines" name="Philippines" id="dbc_Philippines" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Philippines" class="data-body__label-with"></label>
+                        <label for="dbc_Philippines" class="data-body__label-text">
+                            Philippines
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Pitcairn" name="Pitcairn" id="dbc_Pitcairn" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Pitcairn" class="data-body__label-with"></label>
+                        <label for="dbc_Pitcairn" class="data-body__label-text">
+                            Pitcairn
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Poland" name="Poland" id="dbc_Poland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Poland" class="data-body__label-with"></label>
+                        <label for="dbc_Poland" class="data-body__label-text">
+                            Poland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Portugal" name="Portugal" id="dbc_Portugal" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Portugal" class="data-body__label-with"></label>
+                        <label for="dbc_Portugal" class="data-body__label-text">
+                            Portugal
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Puerto Rico" name="PuertoRico" id="dbc_PuertoRico" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_PuertoRico" class="data-body__label-with"></label>
+                        <label for="dbc_PuertoRico" class="data-body__label-text">
+                            Puerto Rico
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Qatar" name="Qatar" id="dbc_Qatar" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Qatar" class="data-body__label-with"></label>
+                        <label for="dbc_Qatar" class="data-body__label-text">
+                            Qatar
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Reunion" name="Reunion" id="dbc_Reunion" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Reunion" class="data-body__label-with"></label>
+                        <label for="dbc_Reunion" class="data-body__label-text">
+                            Reunion
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Romania" name="Romania" id="dbc_Romania" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Romania" class="data-body__label-with"></label>
+                        <label for="dbc_Romania" class="data-body__label-text">
+                            Romania
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-brics class_country-cis class_country-eaeu class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Russian Federation" name="RussianFederation" id="dbc_RussianFederation" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_RussianFederation" class="data-body__label-with"></label>
+                        <label for="dbc_RussianFederation" class="data-body__label-text">
+                            Russian Federation
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Rwanda" name="Rwanda" id="dbc_Rwanda" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Rwanda" class="data-body__label-with"></label>
+                        <label for="dbc_Rwanda" class="data-body__label-text">
+                            Rwanda
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Barthélemy" name="SaintBarthelemy" id="dbc_SaintBarthelemy" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintBarthelemy" class="data-body__label-with"></label>
+                        <label for="dbc_SaintBarthelemy" class="data-body__label-text">
+                            Saint Barthélemy
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Helena, Ascension And Tristan Da Cunha" name="SaintHelenaAscensionAndTristanDaCunha" id="dbc_SaintHelenaAscensionAndTristanDaCunha" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintHelenaAscensionAndTristanDaCunha" class="data-body__label-with"></label>
+                        <label for="dbc_SaintHelenaAscensionAndTristanDaCunha" class="data-body__label-text">
+                            Saint Helena, Ascension And Tristan Da Cunha
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Kitts and Nevis" name="SaintKittsAndNevis" id="dbc_SaintKittsAndNevis" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintKittsAndNevis" class="data-body__label-with"></label>
+                        <label for="dbc_SaintKittsAndNevis" class="data-body__label-text">
+                            Saint Kitts and Nevis
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Lucia" name="SaintLucia" id="dbc_SaintLucia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintLucia" class="data-body__label-with"></label>
+                        <label for="dbc_SaintLucia" class="data-body__label-text">
+                            Saint Lucia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Martin (French Part)" name="SaintMartinFrenchPart" id="dbc_SaintMartinFrenchPart" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintMartinFrenchPart" class="data-body__label-with"></label>
+                        <label for="dbc_SaintMartinFrenchPart" class="data-body__label-text">
+                            Saint Martin (French Part)
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Pierre and Miquelon" name="SaintPierreAndMiquelon" id="dbc_SaintPierreAndMiquelon" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintPierreAndMiquelon" class="data-body__label-with"></label>
+                        <label for="dbc_SaintPierreAndMiquelon" class="data-body__label-text">
+                            Saint Pierre and Miquelon
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saint Vincent and the Grenadines" name="SaintVincentAndTheGrenadines" id="dbc_SaintVincentAndTheGrenadines" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaintVincentAndTheGrenadines" class="data-body__label-with"></label>
+                        <label for="dbc_SaintVincentAndTheGrenadines" class="data-body__label-text">
+                            Saint Vincent and the Grenadines
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Samoa" name="Samoa" id="dbc_Samoa" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Samoa" class="data-body__label-with"></label>
+                        <label for="dbc_Samoa" class="data-body__label-text">
+                            Samoa
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="San Marino" name="SanMarino" id="dbc_SanMarino" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SanMarino" class="data-body__label-with"></label>
+                        <label for="dbc_SanMarino" class="data-body__label-text">
+                            San Marino
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sao Tome and Principe" name="SaoTomeAndPrincipe" id="dbc_SaoTomeAndPrincipe" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaoTomeAndPrincipe" class="data-body__label-with"></label>
+                        <label for="dbc_SaoTomeAndPrincipe" class="data-body__label-text">
+                            Sao Tome and Principe
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Saudi Arabia" name="SaudiArabia" id="dbc_SaudiArabia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SaudiArabia" class="data-body__label-with"></label>
+                        <label for="dbc_SaudiArabia" class="data-body__label-text">
+                            Saudi Arabia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Senegal" name="Senegal" id="dbc_Senegal" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Senegal" class="data-body__label-with"></label>
+                        <label for="dbc_Senegal" class="data-body__label-text">
+                            Senegal
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Serbia" name="Serbia" id="dbc_Serbia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Serbia" class="data-body__label-with"></label>
+                        <label for="dbc_Serbia" class="data-body__label-text">
+                            Serbia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Seychelles" name="Seychelles" id="dbc_Seychelles" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Seychelles" class="data-body__label-with"></label>
+                        <label for="dbc_Seychelles" class="data-body__label-text">
+                            Seychelles
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sierra Leone" name="SierraLeone" id="dbc_SierraLeone" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SierraLeone" class="data-body__label-with"></label>
+                        <label for="dbc_SierraLeone" class="data-body__label-text">
+                            Sierra Leone
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Singapore" name="Singapore" id="dbc_Singapore" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Singapore" class="data-body__label-with"></label>
+                        <label for="dbc_Singapore" class="data-body__label-text">
+                            Singapore
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sint Maarten" name="SintMaarten" id="dbc_SintMaarten" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SintMaarten" class="data-body__label-with"></label>
+                        <label for="dbc_SintMaarten" class="data-body__label-text">
+                            Sint Maarten
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Slovakia" name="Slovakia" id="dbc_Slovakia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Slovakia" class="data-body__label-with"></label>
+                        <label for="dbc_Slovakia" class="data-body__label-text">
+                            Slovakia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Slovenia" name="Slovenia" id="dbc_Slovenia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Slovenia" class="data-body__label-with"></label>
+                        <label for="dbc_Slovenia" class="data-body__label-text">
+                            Slovenia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Solomon Islands" name="SolomonIslands" id="dbc_SolomonIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SolomonIslands" class="data-body__label-with"></label>
+                        <label for="dbc_SolomonIslands" class="data-body__label-text">
+                            Solomon Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Somalia" name="Somalia" id="dbc_Somalia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Somalia" class="data-body__label-with"></label>
+                        <label for="dbc_Somalia" class="data-body__label-text">
+                            Somalia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-brics class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="South Africa" name="SouthAfrica" id="dbc_SouthAfrica" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SouthAfrica" class="data-body__label-with"></label>
+                        <label for="dbc_SouthAfrica" class="data-body__label-text">
+                            South Africa
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="South Georgia and the South Sandwich Islands" name="SouthGeorgiaAndTheSouthSandwichIslands" id="dbc_SouthGeorgiaAndTheSouthSandwichIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SouthGeorgiaAndTheSouthSandwichIslands" class="data-body__label-with"></label>
+                        <label for="dbc_SouthGeorgiaAndTheSouthSandwichIslands" class="data-body__label-text">
+                            South Georgia and the South Sandwich Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="South Ossetia" name="SouthOssetia" id="dbc_SouthOssetia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SouthOssetia" class="data-body__label-with"></label>
+                        <label for="dbc_SouthOssetia" class="data-body__label-text">
+                            South Ossetia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="South Sudan" name="SouthSudan" id="dbc_SouthSudan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SouthSudan" class="data-body__label-with"></label>
+                        <label for="dbc_SouthSudan" class="data-body__label-text">
+                            South Sudan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Spain" name="Spain" id="dbc_Spain" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Spain" class="data-body__label-with"></label>
+                        <label for="dbc_Spain" class="data-body__label-text">
+                            Spain
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sri Lanka" name="SriLanka" id="dbc_SriLanka" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SriLanka" class="data-body__label-with"></label>
+                        <label for="dbc_SriLanka" class="data-body__label-text">
+                            Sri Lanka
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sudan" name="Sudan" id="dbc_Sudan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Sudan" class="data-body__label-with"></label>
+                        <label for="dbc_Sudan" class="data-body__label-text">
+                            Sudan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Suriname" name="Suriname" id="dbc_Suriname" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Suriname" class="data-body__label-with"></label>
+                        <label for="dbc_Suriname" class="data-body__label-text">
+                            Suriname
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Svalbard and Jan Mayen" name="SvalbardAndJanMayen" id="dbc_SvalbardAndJanMayen" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SvalbardAndJanMayen" class="data-body__label-with"></label>
+                        <label for="dbc_SvalbardAndJanMayen" class="data-body__label-text">
+                            Svalbard and Jan Mayen
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Swaziland" name="Swaziland" id="dbc_Swaziland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Swaziland" class="data-body__label-with"></label>
+                        <label for="dbc_Swaziland" class="data-body__label-text">
+                            Swaziland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Sweden" name="Sweden" id="dbc_Sweden" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Sweden" class="data-body__label-with"></label>
+                        <label for="dbc_Sweden" class="data-body__label-text">
+                            Sweden
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Switzerland" name="Switzerland" id="dbc_Switzerland" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Switzerland" class="data-body__label-with"></label>
+                        <label for="dbc_Switzerland" class="data-body__label-text">
+                            Switzerland
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Syrian Arab Republic" name="SyrianArabRepublic" id="dbc_SyrianArabRepublic" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_SyrianArabRepublic" class="data-body__label-with"></label>
+                        <label for="dbc_SyrianArabRepublic" class="data-body__label-text">
+                            Syrian Arab Republic
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Taiwan, Province of China" name="TaiwanProvinceOfChina" id="dbc_TaiwanProvinceOfChina" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_TaiwanProvinceOfChina" class="data-body__label-with"></label>
+                        <label for="dbc_TaiwanProvinceOfChina" class="data-body__label-text">
+                            Taiwan, Province of China
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tajikistan" name="Tajikistan" id="dbc_Tajikistan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Tajikistan" class="data-body__label-with"></label>
+                        <label for="dbc_Tajikistan" class="data-body__label-text">
+                            Tajikistan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tanzania, United Republic Of" name="TanzaniaUnitedRepublicOf" id="dbc_TanzaniaUnitedRepublicOf" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_TanzaniaUnitedRepublicOf" class="data-body__label-with"></label>
+                        <label for="dbc_TanzaniaUnitedRepublicOf" class="data-body__label-text">
+                            Tanzania, United Republic Of
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Thailand" name="Thailand" id="dbc_Thailand" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Thailand" class="data-body__label-with"></label>
+                        <label for="dbc_Thailand" class="data-body__label-text">
+                            Thailand
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Timor-Leste" name="TimorLeste" id="dbc_TimorLeste" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_TimorLeste" class="data-body__label-with"></label>
+                        <label for="dbc_TimorLeste" class="data-body__label-text">
+                            Timor-Leste
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Togo" name="Togo" id="dbc_Togo" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Togo" class="data-body__label-with"></label>
+                        <label for="dbc_Togo" class="data-body__label-text">
+                            Togo
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tokelau" name="Tokelau" id="dbc_Tokelau" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Tokelau" class="data-body__label-with"></label>
+                        <label for="dbc_Tokelau" class="data-body__label-text">
+                            Tokelau
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tonga" name="Tonga" id="dbc_Tonga" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Tonga" class="data-body__label-with"></label>
+                        <label for="dbc_Tonga" class="data-body__label-text">
+                            Tonga
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Trinidad and Tobago" name="TrinidadAndTobago" id="dbc_TrinidadAndTobago" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_TrinidadAndTobago" class="data-body__label-with"></label>
+                        <label for="dbc_TrinidadAndTobago" class="data-body__label-text">
+                            Trinidad and Tobago
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tunisia" name="Tunisia" id="dbc_Tunisia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Tunisia" class="data-body__label-with"></label>
+                        <label for="dbc_Tunisia" class="data-body__label-text">
+                            Tunisia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Turkey" name="Turkey" id="dbc_Turkey" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Turkey" class="data-body__label-with"></label>
+                        <label for="dbc_Turkey" class="data-body__label-text">
+                            Turkey
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Turkmenistan" name="Turkmenistan" id="dbc_Turkmenistan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Turkmenistan" class="data-body__label-with"></label>
+                        <label for="dbc_Turkmenistan" class="data-body__label-text">
+                            Turkmenistan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Turks and Caicos Islands" name="TurksAndCaicosIslands" id="dbc_TurksAndCaicosIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_TurksAndCaicosIslands" class="data-body__label-with"></label>
+                        <label for="dbc_TurksAndCaicosIslands" class="data-body__label-text">
+                            Turks and Caicos Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Tuvalu" name="Tuvalu" id="dbc_Tuvalu" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Tuvalu" class="data-body__label-with"></label>
+                        <label for="dbc_Tuvalu" class="data-body__label-text">
+                            Tuvalu
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Uganda" name="Uganda" id="dbc_Uganda" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Uganda" class="data-body__label-with"></label>
+                        <label for="dbc_Uganda" class="data-body__label-text">
+                            Uganda
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Ukraine" name="Ukraine" id="dbc_Ukraine" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Ukraine" class="data-body__label-with"></label>
+                        <label for="dbc_Ukraine" class="data-body__label-text">
+                            Ukraine
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="United Arab Emirates" name="UnitedArabEmirates" id="dbc_UnitedArabEmirates" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_UnitedArabEmirates" class="data-body__label-with"></label>
+                        <label for="dbc_UnitedArabEmirates" class="data-body__label-text">
+                            United Arab Emirates
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="United Kingdom" name="UnitedKingdom" id="dbc_UnitedKingdom" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_UnitedKingdom" class="data-body__label-with"></label>
+                        <label for="dbc_UnitedKingdom" class="data-body__label-text">
+                            United Kingdom
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-g7 class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="United States" name="UnitedStates" id="dbc_UnitedStates" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_UnitedStates" class="data-body__label-with"></label>
+                        <label for="dbc_UnitedStates" class="data-body__label-text">
+                            United States
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="United States Minor Outlying Islands" name="UnitedStatesMinorOutlyingIslands" id="dbc_UnitedStatesMinorOutlyingIslands" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_UnitedStatesMinorOutlyingIslands" class="data-body__label-with"></label>
+                        <label for="dbc_UnitedStatesMinorOutlyingIslands" class="data-body__label-text">
+                            United States Minor Outlying Islands
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Uruguay" name="Uruguay" id="dbc_Uruguay" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Uruguay" class="data-body__label-with"></label>
+                        <label for="dbc_Uruguay" class="data-body__label-text">
+                            Uruguay
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-cis class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Uzbekistan" name="Uzbekistan" id="dbc_Uzbekistan" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Uzbekistan" class="data-body__label-with"></label>
+                        <label for="dbc_Uzbekistan" class="data-body__label-text">
+                            Uzbekistan
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Vanuatu" name="Vanuatu" id="dbc_Vanuatu" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Vanuatu" class="data-body__label-with"></label>
+                        <label for="dbc_Vanuatu" class="data-body__label-text">
+                            Vanuatu
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Venezuela" name="Venezuela" id="dbc_Venezuela" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Venezuela" class="data-body__label-with"></label>
+                        <label for="dbc_Venezuela" class="data-body__label-text">
+                            Venezuela
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Vietnam" name="Vietnam" id="dbc_Vietnam" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Vietnam" class="data-body__label-with"></label>
+                        <label for="dbc_Vietnam" class="data-body__label-text">
+                            Vietnam
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Virgin Islands, British" name="VirginIslandsBritish" id="dbc_VirginIslandsBritish" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_VirginIslandsBritish" class="data-body__label-with"></label>
+                        <label for="dbc_VirginIslandsBritish" class="data-body__label-text">
+                            Virgin Islands, British
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Virgin Islands, U.S." name="VirginIslandsUS" id="dbc_VirginIslandsUS" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_VirginIslandsUS" class="data-body__label-with"></label>
+                        <label for="dbc_VirginIslandsUS" class="data-body__label-text">
+                            Virgin Islands, U.S.
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Wallis and Futuna" name="WallisAndFutuna" id="dbc_WallisAndFutuna" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_WallisAndFutuna" class="data-body__label-with"></label>
+                        <label for="dbc_WallisAndFutuna" class="data-body__label-text">
+                            Wallis and Futuna
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Western Sahara" name="WesternSahara" id="dbc_WesternSahara" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_WesternSahara" class="data-body__label-with"></label>
+                        <label for="dbc_WesternSahara" class="data-body__label-text">
+                            Western Sahara
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Yemen" name="Yemen" id="dbc_Yemen" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Yemen" class="data-body__label-with"></label>
+                        <label for="dbc_Yemen" class="data-body__label-text">
+                            Yemen
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Zambia" name="Zambia" id="dbc_Zambia" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Zambia" class="data-body__label-with"></label>
+                        <label for="dbc_Zambia" class="data-body__label-text">
+                            Zambia
+                        </label>
+                    </div>
+                </div>
+                <div class="class_country-more-other class_all-country country_name db__half-column">
+                    <div class="data-body__check-country">
+                        <input data-nameRu="Zimbabwe" name="Zimbabwe" id="dbc_Zimbabwe" type="checkbox" class="data-body__checkbox-with country-name_check">
+                        <label for="dbc_Zimbabwe" class="data-body__label-with"></label>
+                        <label for="dbc_Zimbabwe" class="data-body__label-text">
+                            Zimbabwe
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data-body__btn-block data-body__btn-block_end">
+            <div class="data-body__nav data-body__nav_end">
+                <label for="data-nav__tab1" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab3" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+    </div>
+    <div id="data-body-3">
+        <p class="data-body__title">
+            3. List of Subjects
+        </p>
+        <div class="data-body__btn-block">
+            <div class="data-body__select-btn">
+                <input id="select-all-3" type="button" class="data-body__btn data-body__btn_select-all" value="Select all">
+                <input id="unselect-all-3" type="button" class="data-body__btn data-body__btn_unselect-all" value="Clear all">
+            </div>
+            <div class="data-body__nav">
+                <label for="data-nav__tab2" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab4" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-body__selections-3">
+            <p class="data-body__text">
+                Select Subjects
+            </p>
+            <div class="data-body__more-option">
+                <input id="industry-4" type="checkbox" class="data-body__question">
+                <label data-tooltip="Press to select / deselect a group" for="industry-4" class="data-body__label-without data-body__label-without_main">Industry 4.0</label>
+                <div id="db__industry-l" class="db__list-option">
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Digital Competitiveness Index" id="digital-ci" name="digital_ci" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="digital-ci" class="data-body__label-with"></label>
+                        <label for="digital-ci" class="data-body__label-text">Digital Competitiveness Index</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Global Competitiveness Index 4.0" id="global-ci" name="global_ci" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="global-ci" class="data-body__label-with"></label>
+                        <label for="global-ci" class="data-body__label-text">Global Competitiveness Index 4.0</label>
+                    </div>
+                </div>
+            </div>
+            <div class="data-body__more-option">
+                <input id="knowledge-economy" type="checkbox" class="data-body__question">
+                <label data-tooltip="Press to select / deselect a group" for="knowledge-economy" class="data-body__label-without data-body__label-without_main">Knowledge economy</label>
+                <div id="db__knowledge-economy-l" class="db__list-option">
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Innovation Index" id="innovation-i" name="innovation_i" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="innovation-i" class="data-body__label-with"></label>
+                        <label for="innovation-i" class="data-body__label-text">Innovation Index</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Human development index" id="human-di" name="human_di" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="human-di" class="data-body__label-with"></label>
+                        <label for="human-di" class="data-body__label-text">Human development index</label>
+                    </div>
+                </div>
+            </div>
+            <div class="data-body__more-option">
+                <input id="economic-growth" type="checkbox" class="data-body__question">
+                <label data-tooltip="Press to select / deselect a group" for="economic-growth" class="data-body__label-without data-body__label-without_main">Economic growth</label>
+                <div id="db__economic-growth-l" class="db__list-option">
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Economic growth rate" id="eg-rate" name="eg_rate" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="eg-rate" class="data-body__label-with"></label>
+                        <label for="eg-rate" class="data-body__label-text">Economic growth rate</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="GDP" id="gdp" name="gdp" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="gdp" class="data-body__label-with"></label>
+                        <label for="gdp" class="data-body__label-text">GDP</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="GDP per capita" id="gdp-person" name="gdp_person" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="gdp-person" class="data-body__label-with"></label>
+                        <label for="gdp-person" class="data-body__label-text">GDP per capita</label>
+                    </div>
+                </div>
+            </div>
+            <div class="data-body__more-option">
+                <input id="sustainable-d" type="checkbox" class="data-body__question">
+                <label data-tooltip="Press to select / deselect a group" for="sustainable-d" class="data-body__label-without data-body__label-without_main">Sustainable development</label>
+                <div id="db__sustainable-d-l" class="db__list-option">
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Quality of Life Index" id="quality-l" name="quality_l" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="quality-l" class="data-body__label-with"></label>
+                        <label for="quality-l" class="data-body__label-text">Quality of Life Index</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Happiness index" id="happy-i" name="happy_i" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="happy-i" class="data-body__label-with"></label>
+                        <label for="happy-i" class="data-body__label-text">Happiness index</label>
+                    </div>
+                    <div class="data-body__check-label">
+                        <input data-titleRu="Sustainability Index" id="solid-gi" name="solid_gi" type="checkbox" class="data-body__checkbox-with title-name_check">
+                        <label for="solid-gi" class="data-body__label-with"></label>
+                        <label for="solid-gi" class="data-body__label-text">Sustainability Index</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data-body__btn-block data-body__btn-block_end">
+            <div class="data-body__nav data-body__nav_end">
+                <label for="data-nav__tab2" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab4" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-what-select dws">
+            <div class="dws__countries">
+                <h6 class="dws__title">
+                    Your selected countries
+                </h6>
+                <div class="row dws__list_country">
+                    <!-- Сюда будет вставлятся информационный список выбраных стран для таблицы -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="data-body-4">
+        <p class="data-body__title">
+            4. List of Years
+        </p>
+        <div class="data-body__btn-block">
+            <div class="data-body__select-btn">
+                <input id="select-all-4" type="button" class="data-body__btn data-body__btn_select-all" value="Select all">
+                <input id="unselect-all-4" type="button" class="data-body__btn data-body__btn_unselect-all" value="Clear all">
+            </div>
+            <div class="data-body__nav">
+                <label for="data-nav__tab3" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab5" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-body__selections-4">
+            <input id="period" type="checkbox" class="data-body__question">
+            <label data-tooltip="Press to select / deselect a group" for="period" class="data-body__label-without data-body__label-without_main">Select Years</label>
+            <div id="time-periods" class="db__list-option">
+                <div class="data-body__check-label">
+                    <input id="time-period-2019" name="2019" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2019" class="data-body__label-with"></label>
+                    <label for="time-period-2019" class="data-body__label-text">2019</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="time-period-2020" name="2020" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2020" class="data-body__label-with"></label>
+                    <label for="time-period-2020" class="data-body__label-text">2020 (forecast)</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="time-period-2021" name="2021" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2021" class="data-body__label-with"></label>
+                    <label for="time-period-2021" class="data-body__label-text">2021 (forecast)</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="time-period-2022" name="2022" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2022" class="data-body__label-with"></label>
+                    <label for="time-period-2022" class="data-body__label-text">2022 (forecast)</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="time-period-2023" name="2023" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2023" class="data-body__label-with"></label>
+                    <label for="time-period-2023" class="data-body__label-text">2023 (forecast)</label>
+                </div>
+                <div class="data-body__check-label">
+                    <input id="time-period-2024" name="2024" type="checkbox" class="year-name_check data-body__checkbox-with">
+                    <label for="time-period-2024" class="data-body__label-with"></label>
+                    <label for="time-period-2024" class="data-body__label-text">2024 (forecast)</label>
+                </div>
+            </div>
+        </div>
+        <div class="data-body__btn-block data-body__btn-block_end-4-step">
+            <div class="wrap-for-manual-btn">
+                <a id="download-manual" href="manual-for-data-base.pdf" download="The methodology for making INC forecasts for 2020-2024.pdf" class="data-body__btn data-body__btn_download-manual">
+                    Download
+                </a>
+                <span class="btn_download_manual">"The methodology for making INC forecasts for 2020-2024"</span>
+            </div>
+            <div class="data-body__nav data-body__nav_end">
+
+                <label for="data-nav__tab3" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="data-nav__tab5" class="data-body__btn data-body__btn_nav-next">Continue</label>
+            </div>
+        </div>
+        <div class="data-what-select dws">
+            <div class="dws__countries">
+                <h6 class="dws__title">
+                    Your selected countries
+                </h6>
+                <div id="dws-country" class="row dws__list_country">
+                    <!-- Сюда будет вставлятся информационный список выбраных стран для таблицы -->
+                </div>
+            </div>
+            <div class="dws__topics">
+                <h6 class="dws__title">
+                    Your selected subjects
+                </h6>
+                <div id="dws-topics" class="row dws__list_title ">
+                    <!-- Сюда будет вставляться информационный список выбранных тем для таблицы -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="data-body-5">
+        <p class="data-body__title">
+            5. Report on selected countries and subjects
+        </p>
+        <div class="data-body__btn-block">
+            <div class="data-body__select-btn">
+                <label for="data-body__sheet-1" class="data-body__btn db-btn data-body__btn_for-value db-btn_active">By subjects</label>
+                <label for="data-body__sheet-2" class="data-body__btn db-btn data-body__btn_for-years">By years</label>
+
+            </div>
+            <div class="data-body__nav">
+                <label for="data-nav__tab4" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="download-sheet" class="data-body__btn data-body__btn_download">Download <span class="btn_download_exel">EXEL</span></label>
+                <input id="download-sheet" type="button" class="data-body__btn_download">
+            </div>
+        </div>
+        <div class="data-body__selections-5">
+            <!-- Элементы скрыты -->
+            <input name="db__sheet" id="data-body__sheet-1" checked type="radio" class="data-body__btn db-btn_sheet data-body__btn_sheet-1" value="">
+            <input name="db__sheet" id="data-body__sheet-2" type="radio" class="data-body__btn db-btn_sheet  data-body__btn_sheet-2" value="">
+            <!-- Элементы скрыты -->
+            <style>
+                tbody>tr:not(:first-child) {
+                    border-top: none;
+                }
+
+            </style>
+            <div id="db-sheet-1" class="sheet-for-db">
+                <div class="sheet-for-db__inner">
+                    <table class="table_sort" align="center" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td colspan="3">Digital Competitiveness Index</td>
+                                <td colspan="3">Global Competitiveness Index 4.0</td>
+                            </tr>
+                            <tr>
+                                <th>Countries</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morocco</td>
+                                <td>-</td>
+                                <td>432,002</td>
+                                <td>-</td>
+                                <td>400,237</td>
+                                <td>-</td>
+                                <td>415,180</td>
+                            </tr>
+                            <tr>
+                                <td>Marshall Islands</td>
+                                <td>32,14</td>
+                                <td>20433,420</td>
+                                <td>25,21</td>
+                                <td>43025,432</td>
+                                <td>20,24</td>
+                                <td>43525,423</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="db-sheet-2" class="sheet-for-db">
+                <div class="sheet-for-db__inner">
+                    <table class="table_sort" align="center" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td colspan="2">2019</td>
+                                <td colspan="2">2020</td>
+                                <td colspan="2">2021</td>
+                            </tr>
+                            <tr>
+                                <th>Countries</th>
+                                <th>Digital Competitiveness Index</th>
+                                <th>Global Competitiveness Index 4.0</th>
+                                <th>Digital Competitiveness Index</th>
+                                <th>Global Competitiveness Index 4.0</th>
+                                <th>Digital Competitiveness Index</th>
+                                <th>Global Competitiveness Index 4.0</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morocco</td>
+                                <td>-</td>
+                                <td>432,002</td>
+                                <td>-</td>
+                                <td>400,237</td>
+                                <td>-</td>
+                                <td>415,180</td>
+                            </tr>
+                            <tr>
+                                <td>Marshall Islands</td>
+                                <td>32,14</td>
+                                <td>20433,420</td>
+                                <td>25,21</td>
+                                <td>43025,432</td>
+                                <td>20,24</td>
+                                <td>43525,423</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', () => {
+                    const getSort = ({
+                        target
+                    }) => {
+                        const order = (target.dataset.order = -(target.dataset.order || -1));
+                        const index = [...target.parentNode.cells].indexOf(target);
+                        const collator = new Intl.Collator(['en', 'ru'], {
+                            numeric: true
+                        });
+                        const comparator = (index, order) => (a, b) => order * collator.compare(
+                            a.children[index].innerHTML,
+                            b.children[index].innerHTML
+                        );
+
+                        for (const tBody of target.closest('table').tBodies)
+                            tBody.append(...[...tBody.rows].sort(comparator(index, order)));
+                        for (const cell of target.parentNode.cells)
+                            cell.classList.toggle('sorted', cell === target);
+                    };
+
+                    document.querySelectorAll('.table_sort thead th').forEach(tableTH => tableTH.addEventListener('click', () => getSort(event)));
+
+                });
+
+            </script>
+        </div>
+        <div class="data-body__btn-block data-body__btn-block_end">
+            <div class="data-body__nav data-body__nav_end">
+                <label for="data-nav__tab4" class="data-body__btn data-body__btn_nav-back"></label>
+                <label for="download-sheet" class="data-body__btn data-body__btn_download">Download <span class="btn_download_exel">EXEL</span></label>
+                <input id="download-sheet" type="button" class="data-body__btn_download">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    let filter_lang = 'en';
+
+</script>
+<script src="js/main.js"></script>
