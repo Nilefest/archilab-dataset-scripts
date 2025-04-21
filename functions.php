@@ -5,9 +5,9 @@ $table_db = [];
 
 // DB vars
 $host = 'localhost';
-$dbname = 'markavolga_scrpt';
-$login = 'markavolga_scrpt';
-$password = 'markavolgadb2020nlf';
+$dbname = '********';
+$login = '********';
+$password = 'dataset_db';
 $db = getDbConnect($host, $dbname, $login, $password);
 
 $table_name = 'filter_country';
